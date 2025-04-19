@@ -1,20 +1,22 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import Image from "./image";
-import List from './list'
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import './App.css';
+import List from './list';
+import Image from './image';
+import Top from './Top';
 
-
-// Create component
-function App() {
+const App = () => {
   return (
-    <div>
+    <div className="App">
       <h1>Hello React</h1>
-      <Header />
-      <Footer />
+      <Header list="10 daftar makanan" />
+      <Top />
       <Image />
-      <List/>
+      <List />
+      <Footer />
     </div>
   );
 }
+
 export default App;
